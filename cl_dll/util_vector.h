@@ -80,7 +80,7 @@ public:
 	inline Vector(float rgfl[3])					{ x = rgfl[0]; y = rgfl[1]; z = rgfl[2];	}
 
 	// Operators
-	inline Vector operator-(void) const				{ return Vector(-x,-y,-z);				}
+	//inline Vector operator-(void) const				{ return Vector(-x,-y,-z);				}
 	inline int operator==(const Vector& v) const	{ return x==v.x && y==v.y && z==v.z;	}
 	inline int operator!=(const Vector& v) const	{ return !(*this==v);					}
 	inline Vector operator+(const Vector& v) const	{ return Vector(x+v.x, y+v.y, z+v.z);	}
